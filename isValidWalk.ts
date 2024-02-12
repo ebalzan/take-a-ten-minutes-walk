@@ -3,7 +3,7 @@ function isValidWalk(walk: string[]): boolean {
     return false
   }
 
-  const count: any = {}
+  const count: { [key: string]: number } = {}
 
   walk.forEach((letter: string) => {
     if (count[letter]) {
